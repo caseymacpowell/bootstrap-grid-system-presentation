@@ -7,38 +7,43 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
+	<!-- Utilizing Bootstrap's grid system. -->
 	<div class="container">
+		<!-- Created a column spanning full-width of grid for header. -->
 		<div class="row">
 			<div class="col-xs-12">
-				<h1>Container - 12 columns - Fixed Width</h1>
+				<h1>Container - Fixed Width</h1>
 			</div>
 		</div>
 		<div class="row">
+		<!-- Created 2 columns, the first is 1/2 of the grid width, the other is 1/6 the width, offset by 1/3 the width. -->
 			<div class="col-md-6">
-				<p>6 columns on the left</p>
+				<p>1 column, 1/2 of the grid width, on the left</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iusto vero quo corporis officia minima sapiente placeat quia ex, aspernatur accusamus nemo aliquam veniam amet qui iure, fugiat unde necessitatibus.</p>
 			</div>
 			<div class="col-md-2 col-md-offset-4">
-				<p>2 columns on the right, offset 4 columns</p>
+				<p>1 column, 1/6 the grid width, on the right, offset by a column 1/3 the width of grid system</p>
 			</div>
 		</div>
 	</div>
+	<!--Created an identical container to the one above but with class "container-fluid" to remove some of the pre-defined styles associated with class "container" Better for larger screens. -->
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1>Container-Fluid - 12 columns - Full Width</h1>
+				<h1>Container-Fluid - Full Width - Better for Larger Screens</h1>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<p>6 columns on the left</p>
+				<p>1 column, 1/2 the grid width, on the left</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit iusto vero quo corporis officia minima sapiente placeat quia ex, aspernatur accusamus nemo aliquam veniam amet qui iure, fugiat unde necessitatibus.</p>
 			</div>
 			<div class="col-md-2 col-md-offset-4">
-				<p>2 columns on the right, offset 4 columns</p>
+				<p>1 column, 1/6 the grid width, on the right, offset by a column 1/3 the width of grid system</p>
 			</div>
 		</div>
 	</div><br><br><br>
+	<!-- Created another container to show an example of column wrapping. -->
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -47,14 +52,14 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<p>6 columns</p>
+				<p>1 column, 1/2 the width of grid system.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam excepturi odit cupiditate suscipit obcaecati esse, sapiente harum necessitatibus! Ipsum labore, quisquam sit. Ea dolore ipsa iusto aliquam voluptates repudiandae accusantium?</p>
 			</div>
 			<div class="col-md-8">
-				<p>8 columns</p>
-				<p>Since 6 + 8 > 12, the second grouping of columns will get wrapped onto a new line.</p>
+				<p>1 column, 2/3 the width of grid system. As 1/2 + 2/3 > 1, the second column gets wrapped below the first.</p>
 			</div>
 		</div>
+		<!-- Footer -->
 		<div class="row">
 			<div class="col-xs-12">
 				<h1>Footer</h1>
